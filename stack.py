@@ -1,15 +1,21 @@
-
 class Stack():
-    """A Class to represent a Stack"""
-    def __init__(self, MaxStackSize):
-        self._StackPointer = 0
-        self._MaxStackSize = 5
+    """a representation of a stack"""
+    def __init__(self, MaxSize):
+        self.MaxSize = MaxSize
+        self.StackPointer = 0
+        self.list = []
 
-def main():
-    print("1. Push data onto the stack")
-    print("2. Pull data from the stack")
-    print()
-    choice= int(input("Please choose a choice form the list above"))
-    if choice == 1:
-        
+    def size(self):
+        StackSize = len(self.items)
+        return StackSize
+
+    def pop(self):
+        size = self.StackSize()
+        if Size > 0:
+            self.items.pop()
+            self.StackPointer = size
+        else:
+            print("There are no items in the stack")
+
+    def push(self, item ):
         
